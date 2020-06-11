@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: vazir;
+}
+body {
+  background: #f7f8f3;
+  direction: rtl;
+}
+.buttons-container input {
+  background: transparent;
+  border: 1px solid #ff6f53;
+  padding: 1em;
+  border-radius: 5px;
+  width: 95%;
+  outline: none;
+  color: #2c3d63;
+}
+.buttons-container input::placeholder {
+  color: #ff6f53;
+}
+.container {
+  display: flex;
+  height: 100%;
+}
+.buttons-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.buttons-container button {
+  width: 48%;
+  background: #2c3d63;
+  border: 1px solid #2c3d63;
+  padding: 1em 2em;
+  border-radius: 5px;
+  color: #addcca;
+  margin: 1em 0.5em;
+  cursor: pointer;
+  outline: none;
+  transition: 0.4s;
+}
+button:hover {
+  background: #ff6f53;
+  color: #2c3d63;
+}
+.result-container {
+  background: #addcca;
+  width: 100%;
+  height: 100%;
+}
+.result-container h1 {
+  color: #2c3d63;
+  padding: 0.5em;
+  font-size: 20px;
+}
+.result-container li {
+  background: #ff6f53;
+  margin: 0.5em;
+  padding: 0.5em;
+  border-radius: 5px;
+  color: #2c3d63;
+}
+/* budget form styles */
+.budget-form {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #2c3d63d3;
+  z-index: 100;
+  display: none;
+  transition: 0.4s;
+}
+.budget-form.active {
+  display: block;
+}
+.form-container {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.form-container input {
+  width: calc(50% - 1em);
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #2c3d63;
+}
+.form-container button,.clear {
+  padding: 1em 3em;
+  cursor: pointer;
+  color: #addcca;
+  border: 1px solid #2c3d63;
+  border-radius: 5px;
+  background: #2c3d63;
+  margin-top: 1em;
+  transition: 0.4s;
+  outline: none;
+}
+.form-container button:hover {
+  background: #ff6f53;
+  color: #2c3d63;
+}
+.clear{
+  position: absolute;
+  left: 1em;
+  bottom: 1em;
+}
+
+
+/* @CodeWithMaster */
